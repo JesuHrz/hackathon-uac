@@ -1,6 +1,7 @@
 import CheckOut from './Checkout'
 import Products from './List'
 import ProductDetail from './ProductDetail'
+import OrderSumary from './Order';
 
 import { Navbar, Nav } from 'react-bootstrap'
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom'
@@ -25,6 +26,7 @@ function App () {
           <Route path="/products" component={Products}></Route>
           <Route path="/checkout" component={CheckOut}></Route>
           <Route path="/productDetail" component={ProductDetail}></Route>
+          <Route path="/OrderSumary" component={OrderSumary}></Route>
         </Switch>
       </Router>
     </div>

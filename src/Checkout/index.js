@@ -1,4 +1,5 @@
 import { useForm } from 'react-hook-form';
+import { useHistory } from 'react-router-dom'
 import {
   Container,
   Row,
@@ -17,7 +18,17 @@ const COUNTRIES = [
   'Tolima'
 ]
 
-function CheckOut () {
+function CheckOut (props) {
+
+  const product = props.history.location.state;
+
+  const history = useHistory();
+
+  function orderCheckoutHandler(e, product) {
+    
+    history.push("/OrderSumary",product);
+    
+  }
 
   const { register, handleSubmit } = useForm({
     defaultValues: {
@@ -33,7 +44,7 @@ function CheckOut () {
     }
   })
   return (
-    <form className='checkout' onSubmit={handleSubmit(d => console.log(d))}>
+    <form className='checkout' onSubmit={(e) => {orderCheckoutHandler( e, product )}}>
       <Container className='border mt-5'>
         <Row>
           <Col xs={6}>
