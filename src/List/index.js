@@ -22,6 +22,7 @@ const Products = () => {
         .then(async res => {
             if (res.status === 200){
                 const resData = await res.json();
+                console.log(resData.data)
                 setProduct(resData.data)
             }else {
                 const resData = await res.json();
@@ -39,18 +40,18 @@ const Products = () => {
                 <div className="cardWrapper mt-5">          
                     {
                         product.map((product, idx) => (
-                            <Row className="mt-3">
+                            <Row className="mt-3" key={idx}>
                                 <Col sm>
                                     <img src={product.img_url} className="product-img" alt="product_imag"></img>
                                 </Col>
                                 <Col sm>
-                                    <Card.Title key={idx+"a"} className="mt-3">{ product.name }</Card.Title>
-                                    <Card.Subtitle key={idx+"b"} className="mb-2 text-muted">{ product.description }</Card.Subtitle>
-                                    <Card.Text key={idx+"c"} className="mt-4">Farm: { product.farm }</Card.Text>
-                                    <Card.Text key={idx+"d"}>Stock: { product.stock}</Card.Text>
+                                    <Card.Title className="mt-3">{ product.name }</Card.Title>
+                                    <Card.Subtitle className="mb-2 text-muted descript">{ product.description }</Card.Subtitle>
+                                    <Card.Text className="mt-4">Farm: { product.farm }</Card.Text>
+                                    <Card.Text>Stock: { product.stock}</Card.Text>
                                 </Col>
                                 <Col sm>
-                                    <Card.Title key={idx} className="mt-3">${ product.pricePerPack }</Card.Title>
+                                    <Card.Title className="mt-3">${ product.price_per_pack }</Card.Title>
                                     <Card.Subtitle className="mb-2 text-muted">Tax: 0.05%</Card.Subtitle>
                                     <button className="btn-product-detail"
                                         onClick={e => {
