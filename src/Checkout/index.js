@@ -4,7 +4,6 @@ import {
   Row,
   Col,
   Form,
-  InputGroup,
   Button
 } from 'react-bootstrap'
 
@@ -35,14 +34,13 @@ function CheckOut () {
   })
   return (
     <form className='checkout' onSubmit={handleSubmit(d => console.log(d))}>
-      <Container className='border'>
+      <Container className='border mt-5'>
         <Row>
           <Col xs={6}>
             <Form.Group>
               <Form.Label>First Name</Form.Label>
               <Form.Control
                 type='text'
-                placeholder='First Name'
                 name='firstname'
                 ref={register}
               />
@@ -53,7 +51,6 @@ function CheckOut () {
               <Form.Label>Last Name</Form.Label>
               <Form.Control
                 type='text'
-                placeholder='Last Name'
                 name='lastname'
                 ref={register}
               />
@@ -64,7 +61,6 @@ function CheckOut () {
               <Form.Label>Email address</Form.Label>
               <Form.Control
                 type='email'
-                placeholder='Email address'
                 name='email'
                 ref={register}
               />
@@ -75,7 +71,6 @@ function CheckOut () {
               <Form.Label>Phone number</Form.Label>
               <Form.Control
                 type='text'
-                placeholder='Phone'
                 name='phone'
                 ref={register}
               />
@@ -86,7 +81,6 @@ function CheckOut () {
               <Form.Label>Address</Form.Label>
               <Form.Control
                 type='text'
-                placeholder='Address'
                 name='address'
                 ref={register}
               />
@@ -97,7 +91,6 @@ function CheckOut () {
               <Form.Label>Town / City</Form.Label>
               <Form.Control
                 type='text'
-                placeholder='Town or City'
                 name='town'
                 ref={register}
               />
@@ -118,7 +111,6 @@ function CheckOut () {
               <Form.Label>ZIP / Postal code</Form.Label>
               <Form.Control
                 type='text'
-                placeholder='Postal code or ZIP'
                 name='zipcode'
                 ref={register}
               />
@@ -131,7 +123,6 @@ function CheckOut () {
               <Form.Label>Card number</Form.Label>
               <Form.Control
                 type='text'
-                placeholder='Card Number'
                 name='card-number'
               />
             </Form.Group>
@@ -141,7 +132,6 @@ function CheckOut () {
               <Form.Label >Card holder</Form.Label>
               <Form.Control
                 type='text'
-                placeholder='Card holder'
                 name='card-holder'
               />
             </Form.Group>
@@ -151,7 +141,6 @@ function CheckOut () {
               <Form.Label >Expiration date</Form.Label>
               <Form.Control
                 type='text'
-                placeholder='Expiration date'
                 name='expiration'
               />
             </Form.Group>
@@ -161,7 +150,6 @@ function CheckOut () {
               <Form.Label >CVC</Form.Label>
               <Form.Control
                 type='text'
-                placeholder='CVC'
                 name='cvc'
               />
             </Form.Group>

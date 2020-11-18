@@ -1,7 +1,8 @@
 import CheckOut from './Checkout'
 import Products from './List'
+import ProductDetail from './ProductDetail'
 
-import { Navbar, Nav, Button } from 'react-bootstrap'
+import { Navbar, Nav } from 'react-bootstrap'
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
@@ -21,9 +22,9 @@ function App () {
           </Navbar.Collapse>
         </Navbar>
         <Switch>
-          {/* <Route path="/" component={Home} exact={true}></Route> */}
           <Route path="/products" component={Products}></Route>
           <Route path="/checkout" component={CheckOut}></Route>
+          <Route path="/productDetail" component={ProductDetail}></Route>
         </Switch>
       </Router>
     </div>

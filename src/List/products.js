@@ -5,7 +5,7 @@ import cabbage from '../img/cabbage.jpg'
 
 const Product = [
     {
-        id: 1,
+        id: 0,
         name: 'Carrot',
         description: 'Lorem ipsum hopman tue',
         farm: 'Boyacá',
@@ -14,7 +14,7 @@ const Product = [
         image: carrot
     },
     {
-        id: 2,
+        id: 1,
         name: 'Tomatoes',
         description: 'Lorem ipsum hopman tue',
         farm: 'Santander',
@@ -23,7 +23,7 @@ const Product = [
         image: tomatoes
     },
     {
-        id: 3,
+        id: 2,
         name: 'Garlic',
         description: 'Lorem ipsum hopman tue',
         farm: 'Eje Cafetero',
@@ -32,7 +32,7 @@ const Product = [
         image: garlic
     },
     {
-        id: 4,
+        id: 3,
         name: 'Cabbage',
         description: 'Lorem ipsum hopman tue',
         farm: 'Boyacá',
