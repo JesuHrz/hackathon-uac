@@ -1,5 +1,6 @@
 import { Container } from 'react-bootstrap'
 import { useHistory } from 'react-router-dom'
+import { Row, Col, Table, Card } from 'react-bootstrap'
 import './style.css'
 
 function ProductDetail(props) {
@@ -14,59 +15,58 @@ function ProductDetail(props) {
     return (
       <>
         <Container>
-          <div className="product-detail-container">
-            <div className="product-detail-picture-side">
-              <img className="product-detail-picture" 
-                src={product.img_url} 
-                alt="product_img"
-              />
-            </div>
-
-            <div className="product-detail-description">
-                <h2>{product.name}</h2>
-
-                <p>{product.description}</p>
-
-                <table>
+        <div className="cardWrapper mt-5">
+          <Row className="mt-5">
+            <Col lg={6} md={12} sm={12}>
+              <img className="img-fluid rounded" 
+                  src={product.img_url} 
+                  alt="product_img"
+                />
+            </Col>
+            <Col lg={6} md={12} sm={12}>
+              <h2 className="product-detail-name">{product.name}</h2>
+              <p>{product.description}</p>
+              <Table>
+                <tbody>
                   <tr>
-                    <td className="table-title">SKU: </td>
+                    <td>SKU: </td>
                     <td>{product.sku}</td>
-                    <td className="table-title">Freshness:</td>
-                    <td>{product.freshness} dia</td>
+                    <td>Freshness:</td>  
+                    <td>{product.freshness}</td>
                   </tr>
-
                   <tr>
-                    <td className="table-title">Category:</td>
+                    <td>Category:</td>
                     <td>{product.category}</td>
-                    <td className="table-title">Buy by:</td>
+                    <td>Buy by:</td>  
                     <td>{product.buy_by}</td>
                   </tr>
-
                   <tr>
-                    <td className="table-title">Stock:</td>
+                    <td>Stock:</td>
                     <td>in stock</td>
-                    <td className="table-title">Delivery:</td>
+                    <td>Delivery:</td>  
                     <td>{product.delivery} dia</td>
                   </tr>
-
                   <tr>
-                    <td className="table-title">Farm:</td>
+                    <td>Farm:</td>
                     <td>{product.farm}</td>
-                    <td className="table-title">Delivery area:</td>
+                    <td>Delivery area:</td>  
                     <td>{product.delivery_area}</td>
                   </tr>
-                </table>
-
-                <div className="product-detail-push">
-                  <span className="price">${product.price_per_pack}</span> 
-                  <div className="purchase-form">
+                </tbody>
+              </Table>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="text-right">
+              <Card.Title className="price">${product.price_per_pack}</Card.Title>
+              <div className="purchase-form">
                     <input className="product-detail-quantity" type="number" defaultValue="0" name="stock"/>
                     <button className="btn-purchase" onClick={(e)=>{
                       checkoutHandler(e, product)
                     }} >Comprar</button> 
                   </div>
-                </div>
-            </div>
+            </Col>
+          </Row>
           </div>
         </Container>
       </>
