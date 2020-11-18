@@ -5,7 +5,6 @@ import {
   Row,
   Col,
   Form,
-  Button
 } from 'react-bootstrap'
 
 import './styles.css'
@@ -168,7 +167,7 @@ function CheckOut (props) {
         </Row>
         <Row>
           <Col xs={12}>
-            <Button as="input" type="submit" value="Submit" />
+            <button className="btn-checkout">Enviar</button>
           </Col>
         </Row>
       </Container>

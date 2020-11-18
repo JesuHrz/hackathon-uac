@@ -1,3 +1,24 @@
 .checkout .container {
   padding: 1rem;
 }
+
+.btn-checkout {
+  background-color: #ffffff;
+  border: 0.1em solid #6a983c;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #6a983c;
+  text-align: center;
+  transition: all 0.4s;
+
+  padding: 0.35em 1.2em;
+
+  font-family: 'Varela Round', sans-serif;
+}
+
+.btn-checkout:hover {
+  background-color: #6a983c;
+  color: #ffffff;
+}
