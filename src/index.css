@@ -64,6 +64,10 @@ code {
   letter-spacing: 0.4em;
 }
 
+.checkout{
+  margin-top: 100px!important;
+}
+
 /* Media Queries */
 
 @media all and (max-width: 30em) {
