@@ -1,45 +1,17 @@
 import { Fragment } from 'react'
 import { Card, Container, Row, Col} from 'react-bootstrap'
-import img from './zanahoria.jpg'
+import Product from './products.js'
 
 const Products = () => {
-
-    const product = [
-        {
-            id: 1,
-            name: 'Zanahoria',
-            description: 'Lorem ipsum hopman tue',
-            farm: 'Boyacá',
-            stock: 300,
-            pricePerPack: '45.000'
-        },
-        {
-            id: 2,
-            name: 'Yuca',
-            description: 'Lorem ipsum hopman tue',
-            farm: 'Santander',
-            stock: 140,
-            pricePerPack: '64.000'
-        },
-        {
-            id: 3,
-            name: 'Café',
-            description: 'Lorem ipsum hopman tue',
-            farm: 'Eje Cafetero',
-            stock: 780,
-            pricePerPack: '8.000'
-        }
-    ]
-
     return (
         <Fragment>
             <Container>
                 <div className="cardWrapper mt-5">          
                     {
-                        product.map((product, idx) => (
+                        Product.map((product, idx) => (
                             <Row className="mt-3">
                                 <Col sm>
-                                    <img src={img} className="product-img"></img>
+                                    <img key={idx} src={ product.image } className="product-img"></img>
                                 </Col>
                                 <Col sm>
                                     <Card.Title key={idx} className="mt-3">{ product.name }</Card.Title>
