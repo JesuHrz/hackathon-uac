@@ -24,9 +24,9 @@ function CheckOut (props) {
 
   const history = useHistory();
 
-  function orderCheckoutHandler(product) {
+  function orderCheckoutHandler(e, product) {
     
-    history.push("/OrderSumary", product);
+    history.push("/OrderSumary",product);
     
   }
 
@@ -44,7 +44,7 @@ function CheckOut (props) {
     }
   })
   return (
-    <form className='checkout' onSubmit={ orderCheckoutHandler( product )}>
+    <form className='checkout' onSubmit={(e) => {orderCheckoutHandler( e, product )}}>
       <Container className='border mt-5'>
         <Row>
           <Col xs={6}>
