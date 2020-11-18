@@ -15,7 +15,7 @@ function ProductDetail(props) {
     return (
       <>
         <Container>
-        <div className="cardWrapper mt-5">
+        <div className="cardWrapper">
           <Row className="mt-5">
             <Col lg={6} md={12} sm={12}>
               <img className="img-fluid rounded" 
@@ -25,31 +25,31 @@ function ProductDetail(props) {
             </Col>
             <Col lg={6} md={12} sm={12}>
               <h2 className="product-detail-name">{product.name}</h2>
-              <p>{product.description}</p>
+              <p className="product-detail-description">{product.description}</p>
               <Table>
                 <tbody>
                   <tr>
-                    <td>SKU: </td>
+                    <td className="sku">SKU: </td>
                     <td>{product.sku}</td>
-                    <td>Freshness:</td>  
+                    <td className="freshness">Freshness:</td>  
                     <td>{product.freshness}</td>
                   </tr>
                   <tr>
-                    <td>Category:</td>
+                    <td className="category">Category:</td>
                     <td>{product.category}</td>
-                    <td>Buy by:</td>  
+                    <td className="buy">Buy by:</td>  
                     <td>{product.buy_by}</td>
                   </tr>
                   <tr>
-                    <td>Stock:</td>
+                    <td className="stock">Stock:</td>
                     <td>in stock</td>
-                    <td>Delivery:</td>  
+                    <td className="delivery">Delivery:</td>  
                     <td>{product.delivery} dia</td>
                   </tr>
                   <tr>
-                    <td>Farm:</td>
+                    <td className="farm">Farm:</td>
                     <td>{product.farm}</td>
-                    <td>Delivery area:</td>  
+                    <td className="dlvarea">Delivery area:</td>  
                     <td>{product.delivery_area}</td>
                   </tr>
                 </tbody>

@@ -1,72 +1,31 @@
-.product-detail-container {
-    margin: 0 auto;
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
+/* Product Detail Styles */
+.cardWrapper {
+    margin-top: 80px;
 }
 
-.product-detail-picture-side {
-    width: 40%;
-    height: 300px;
-}
-
-.product-detail-picture {
-    width: 80%;
+.product-detail-name {
+    font-family: 'Varela Round', sans-serif;
 }
 
 .product-detail-description {
-    width: 40%;
-    height: 300px;
-    text-align: left;
-}
-
-.product-detail-quantity{
-    margin: 0.3em;
-    width: 3em;
-}
-
-.product-detail-push{
-    margin-top: 2em;
-    display: flex;
-    justify-content: space-between;
-}
-
-.product-detail-description-info{
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.table-title{
-    font-size: 0.7em;
-    font-weight: 400;
-    color: rgb(83, 83, 83);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
 }
 
 .price{
     color: #6A983C;
     font-weight: 500;
     font-size: 1.5em;
+
+    font-family: 'Varela Round', sans-serif;
 }
-
-table{
-    margin-top: 2em;;
-    width:100%;
-}
-
-.product-detail-quantity{
-    padding: 0.3em;
-    border-radius: 0.5em;
-}
-
-
 
 .btn-purchase{
     background-color: #FFFFFF;
     border:0.1em solid #6A983C;
     border-radius:0.5em;
     box-sizing: border-box;
-    font-family:'Roboto',sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-weight:300;
     color:#6A983C;
     text-align:center;
@@ -79,6 +38,7 @@ table{
     color:#FFFFFF;
 }
 
+/* Media Queries */
 
 @media (max-width: 600px) {
     .product-detail-container {

@@ -3,104 +3,16 @@
     box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.64);
 }
 
-#OrderTxt{
+#orderTxt{
     color: #6A983C;
+    font-family: 'Quicksand', sans-serif; 
 }
 
-@media screen and (max-width: 1192px){
-    .btn-product-detail {
-        margin-left: 60px;
-    }
-    .precio{
-        font-size: 20px;
-    }
-    .product-detail-picture{
-        width: 200px;
-    }
-
-    .tabla{
-        font-size: 12px;
-    }
+#orderSubTxt {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
 }
 
-
-
-@media screen and (max-width: 1100px){
-    .btn-product-detail {
-        margin-left: 60px;
-    }
-    .precio{
-        font-size: 20px;
-    }
-    .product-detail-picture{
-        width: 200px;
-    }
-
-    .tabla{
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 900px){
-    .btn-product-detail {
-        margin-left: 60px;
-    }
-    .precio{
-        font-size: 20px;
-    }
-    .product-detail-picture{
-        width: 150px;
-    }
-
-    .tabla{
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 810px){
-    .btn-product-detail {
-        margin-left: 60px;
-    }
-    .precio{
-        font-size: 20px;
-    }
-    .product-detail-picture{
-        width: 150px;
-    }
-
-    .tabla{
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 790px){
-    .btn-product-detail {
-        margin-left: 60px;
-    }
-    .precio{
-        font-size: 20px;
-    }
-    .product-detail-picture{
-        width: 150px;
-    }
-
-    .tabla{
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 536px){
-    .btn-product-detail {
-        margin-left: 60px;
-    }
-    .precio{
-        font-size: 20px;
-    }
-    .product-detail-picture{
-        width: 150px;
-    }
-
-    .tabla{
-        font-size: 10px;
-    }
+.summary-header {
+    margin-top: 100px;
 }
