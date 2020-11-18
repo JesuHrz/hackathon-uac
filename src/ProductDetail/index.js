@@ -3,7 +3,11 @@ import './style.css'
 
 function ProductDetail(props) {
 
-  const product = props.product;
+  console.log(props)
+
+    const product = props.history.location.state;
+
+    console.log(product)
 
     return (
       <>
@@ -47,15 +51,15 @@ function ProductDetail(props) {
                     <td className="table-title">Farm:</td>
                     <td>{product.farm}</td>
                     <td className="table-title">Delivery area:</td>
-                    <td>{product.delivery_Area}</td>
+                    <td>{product.delivery_area}</td>
                   </tr>
                 </table>
 
                 <div className="product-detail-push">
                   <span className="price">${product.price_per_pack}</span> 
                   <div className="purchase-form">
-                    <input className="product-detail-quantity" type="number" name="quantity"/>
-                    <button className="btn-purchase">+ Add to cart</button> 
+                    <input className="product-detail-quantity" type="number" defaultValue="0" name="stock"/>
+                    <button className="btn-purchase">Comprar</button> 
                   </div>
                 </div>
             </div>
