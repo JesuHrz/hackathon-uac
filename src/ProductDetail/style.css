@@ -72,9 +72,26 @@ table{
     text-align:center;
     transition: all 0.4s;
     padding:0.35em 1.2em;
-  }
-  
-  .btn-purchase:hover{
+}
+
+.btn-purchase:hover{
     background-color: #6A983C;
     color:#FFFFFF;
-  }
+}
+
+
+@media (max-width: 600px) {
+    .product-detail-container {
+        width: 100%;
+        display: block;
+    }
+
+    .product-detail-picture-side, .product-detail-description{
+        width: 100%;
+    }
+
+    .product-detail-description{
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+}
