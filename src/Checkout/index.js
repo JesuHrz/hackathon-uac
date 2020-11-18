@@ -147,7 +147,7 @@ function CheckOut (props) {
               />
             </Form.Group>
           </Col>
-          <Col xs={2}>
+          <Col xs={12}>
             <Form.Group>
               <Form.Label >Expiration date</Form.Label>
               <Form.Control
@@ -156,7 +156,7 @@ function CheckOut (props) {
               />
             </Form.Group>
           </Col>
-          <Col xs={2}>
+          <Col xs={12}>
             <Form.Group>
               <Form.Label >CVC</Form.Label>
               <Form.Control
