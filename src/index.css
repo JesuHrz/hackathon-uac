@@ -11,3 +11,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* List style */
+.link:link, .link:visited, .link:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cardWrapper {
+  width: 850px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #DFE3E8;
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+}
+
+.product-img {
+  width: auto;
+  height: 200px;
+  border-radius: 5px;
+  background-size: cover !important;
+}
+
+.btn-product-detail{
+  background-color: #FFFFFF;
+  border:0.1em solid #6A983C;
+  border-radius:0.5em;
+  box-sizing: border-box;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#6A983C;
+  text-align:center;
+  transition: all 0.4s;
+
+  margin:90px 0.3em 0.3em 0;
+  padding:0.35em 1.2em;
+}
+
+.btn-product-detail:hover{
+  background-color: #6A983C;
+  color:#FFFFFF;
+}
+
+@media all and (max-width:30em){
+  .btn-product-detail{
+    display:block;
+    margin:0.4em auto;
+  }
+}
