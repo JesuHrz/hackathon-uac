@@ -1,13 +1,12 @@
-*, body, html {
+*,
+body,
+html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-<<<<<<< HEAD
 .app {
   max-width: 1200px;
   margin: auto;
 }
-=======
->>>>>>> b518076 (landing finished)
