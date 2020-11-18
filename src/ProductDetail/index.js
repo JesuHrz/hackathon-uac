@@ -52,7 +52,7 @@ function ProductDetail(props) {
                 </table>
 
                 <div className="product-detail-push">
-                  <span className="price">${product.price}</span> 
+                  <span className="price">${product.price_per_pack}</span> 
                   <div className="purchase-form">
                     <input className="product-detail-quantity" type="number" name="quantity"/>
                     <button className="btn-purchase">+ Add to cart</button> 
