@@ -6,6 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
   var instances = M.Sidenav.init(elems);
 
   //  Overlay White Lay
+  TweenMax.from(".link", 1, {
+    delay: 1.8,
+    opacity: 0,
+    y: -10,
+    ease: Power3.easeOut,
+  });
   TweenMax.to(".overlay-page", 2, {
     delay: 0.5,
     y: "-110%",
@@ -57,20 +63,20 @@ document.addEventListener("DOMContentLoaded", function () {
   if (window.innerWidth < 992) {
     //  Qualitites Animations
     TweenMax.to(".overlay-box-3", 1.5, {
-      delay: 0.6,
+      delay: 0.3,
       y: "100%",
-      scrollTrigger: { trigger: ".qualities", start: "top 20%" },
+      scrollTrigger: { trigger: ".qualities", start: "top -20%" },
       ease: Power3.easeOut,
     });
     TweenMax.from(".qualities-title", 1, {
-      delay: 0.8,
+      delay: 0.5,
       opacity: 0,
       x: -20,
       scrollTrigger: { trigger: ".qualities", start: "top -10%" },
       ease: Power3.easeOut,
     });
     TweenMax.from(".qualities-info", 1, {
-      delay: 0.9,
+      delay: 0.6,
       opacity: 0,
       x: -10,
       scrollTrigger: { trigger: ".qualities", start: "top -10%" },
@@ -86,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //  Footer Animations
     TweenMax.to(".overlay-footer", 1, {
-      delay: 1,
+      delay: 0.5,
       y: -100,
       scrollTrigger: { trigger: ".qualities", start: "top -10%" },
       ease: Power3.easeOut,

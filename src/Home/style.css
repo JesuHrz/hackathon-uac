@@ -6,7 +6,8 @@
 /*    Overlay Page    */
 .overlay-page {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  margin-top: 64px;
   background-color: #fff;
   z-index: 1000;
   position: absolute;
@@ -25,15 +26,18 @@
   overflow: hidden;
   width: 100%;
   height: 100vh;
+  margin-top: 64px;
 }
 .video {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+
   object-fit: cover;
 }
 .bg-overlay {
   position: absolute;
+  margin-top: 64px;
   width: 100%;
   height: 100vh;
   background: rgb(255, 255, 255);
@@ -50,20 +54,22 @@
   overflow: hidden;
   margin: 0;
   height: auto;
-  text-align: center;
-  margin-top: 60px;
+  justify-content: center;
+  margin-top: 100px;
 }
 .logo {
   overflow: hidden;
 }
-.logo img{
+.logo img {
   width: 55%;
 }
 .title-info {
   overflow: hidden;
   font-family: Neou;
   color: white;
-  margin-top: -10px;
+  margin-top: 10px;
+  text-align: center;
+  justify-content: center;
 }
 
 /*    Information    */
@@ -92,13 +98,18 @@
 
 /*    Map    */
 .farmer {
-  width: 80%;
+  width: 100%;
   height: 300px;
   overflow: hidden;
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   position: relative;
+  margin: auto!important
+}
+.farmer img {
+  width: 70%;
+  margin: 0 !important;
 }
 .overlay-farmer {
   background-color: white;
@@ -108,25 +119,32 @@
 }
 .farmer-text {
   font-family: Neou;
+  width: 60%;
+  margin: 20px auto;
 }
 
 /*    Qualities    */
+#qualities{
+  width: 100%;
+}
 .qualities {
   padding: 9% 10%;
-  height: 100vh;
+  height: 100vh !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 20px;
+  margin: 0 !important;
+  width: 100%;
 }
 .box-3 {
   overflow: hidden;
   position: relative;
   padding: 0px !important;
-  width: 250px!important;
+  width: 250px !important;
+  text-align: center;
 }
 .box-3 img {
-  width: 100%;
+  width: 250px;
 }
 .overlay-box-3 {
   width: 100%;
@@ -134,16 +152,13 @@
   position: absolute;
   background-color: #fff;
 }
-#qualities, .qualities{
-  margin: 0!important;
-}
-.worker{
+.worker {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.worker h1{
+.worker h1 {
   transform: rotate(90deg);
   text-align: center;
   font-family: Bebas Neue;
@@ -159,7 +174,7 @@
   color: rgb(59, 59, 59);
   font-weight: bold;
   font-size: 30px;
-  margin-top: 0!important;
+  margin-top: 0 !important;
 }
 .qualities-info {
   margin-bottom: 20px !important;
@@ -174,6 +189,7 @@
   margin: 0 !important;
   position: relative;
   overflow: hidden;
+
 }
 .footer-info {
   padding: 20px 0;
@@ -181,6 +197,9 @@
   font-family: Neou;
   font-size: 10px;
   margin: 0 !important;
+  width: 100%;
+  text-align: center!important;
+  
 }
 .footer p {
   margin: 0;
@@ -202,31 +221,37 @@
     font-size: calc(0.5vw + 7px);
   }
 }
+@media screen and (max-width: 990px) {
+  .box-3 img {
+    width: 100%;
+    height: auto !important;
+  }
+}
 @media screen and (max-width: 992px) {
   .qualities-text {
     text-align: center;
-    padding-bottom: 5%!important;
+    padding-bottom: 5% !important;
   }
-  .worker{
+  .worker {
     display: none;
   }
-  .qualities{
+  .qualities {
     flex-direction: column;
     height: auto;
   }
-  .box-3{
-    width: 40%!important;
-    margin: 0!important;
+  .box-3 {
+    width: 40% !important;
+    margin: 0 !important;
   }
-  .qualities-text{
-    width: 100%!important;
+  .qualities-text {
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 600px) {
   .bg-overlay {
-    height: 101.5vh;
+    height: 100vh;
   }
-  .information{
+  .information {
     padding: 20% 10%;
   }
 }

@@ -64,7 +64,7 @@ const LandingP = () => {
           </p>
         </div>
         <div className="row qualities">
-          <div className="col s12 m12 l4 box-3">
+          <div className="col s12 m12 l2 box-3">
             <div className="overlay-box-3"></div>
             <img src={Farmer2} alt="" />
           </div>

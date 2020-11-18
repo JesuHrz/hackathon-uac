@@ -14,8 +14,7 @@ function App () {
   return (
     <div className='app'>
       <Router>
-        <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="#home" className="ml-5 logo">Growing</Navbar.Brand>
+        <Navbar bg="light" expand="lg" fixed="top">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">

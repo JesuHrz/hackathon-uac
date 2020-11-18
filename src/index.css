@@ -1,30 +1,34 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 /* List style */
-.link:link, .link:visited, .link:active {
+.link:link,
+.link:visited,
+.link:active {
   text-decoration: none;
   color: black !important;
 }
-
+.link.active{
+  color: red
+}
 .cardWrapper {
   width: 850px;
   margin: 0 auto;
   padding: 20px;
   background-color: white;
   border-radius: 5px;
-  border: 1px solid #DFE3E8;
+  border: 1px solid #dfe3e8;
   box-sizing: border-box;
   transition: all 0.25s ease;
 }
@@ -36,43 +40,40 @@ code {
   background-size: cover !important;
 }
 
-.btn-product-detail{
-  background-color: #FFFFFF;
-  border:0.1em solid #6A983C;
-  border-radius:0.5em;
+.btn-product-detail {
+  background-color: #ffffff;
+  border: 0.1em solid #6a983c;
+  border-radius: 0.5em;
   box-sizing: border-box;
-  font-family:'Roboto',sans-serif;
-  font-weight:300;
-  color:#6A983C;
-  text-align:center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #6a983c;
+  text-align: center;
   transition: all 0.4s;
 
-  margin:90px 0.3em 0.3em 0;
-  padding:0.35em 1.2em;
+  margin: 90px 0.3em 0.3em 0;
+  padding: 0.35em 1.2em;
 }
 
-.btn-product-detail:hover{
-  background-color: #6A983C;
-  color:#FFFFFF;
+.btn-product-detail:hover {
+  background-color: #6a983c;
+  color: #ffffff;
 }
 
 .logo {
   letter-spacing: 0.4em;
 }
 
-/* Animations */
-
-
 /* Media Queries */
 
-@media all and (max-width:30em){
-  .btn-product-detail{
-    display:block;
-    margin:0.4em auto;
+@media all and (max-width: 30em) {
+  .btn-product-detail {
+    display: block;
+    margin: 0.4em auto;
   }
 }
 
-@media screen and (max-width: 990px){
+@media screen and (max-width: 990px) {
   .cardWrapper {
     width: 700px;
   }
@@ -83,11 +84,16 @@ code {
 
   .link:hover {
     opacity: 0.5;
-    transition: 0.25s ease-in-out
+    transition: 0.25s ease-in-out;
+  }
+
+  .navbar-nav {
+    background-color: #fff;
+    margin-top: 21px;
   }
 }
 
-@media screen and (max-width: 890px){
+@media screen and (max-width: 890px) {
   .cardWrapper {
     width: 600px;
   }
@@ -96,13 +102,13 @@ code {
   }
 }
 
-@media screen and (max-width: 840px){
+@media screen and (max-width: 840px) {
   .btn-product-detail {
     margin-top: 60px;
   }
 }
 
-@media screen and (max-width: 790px){
+@media screen and (max-width: 790px) {
   .cardWrapper {
     width: 500px;
   }
@@ -116,12 +122,13 @@ code {
     margin-left: 4.1em;
     margin-right: 0.4sem;
   }
-  .product-price, .product-tax {
+  .product-price,
+  .product-tax {
     text-align: right;
   }
 }
 
-@media screen and (max-width: 590px){
+@media screen and (max-width: 590px) {
   .cardWrapper {
     width: 400px;
   }
@@ -129,7 +136,8 @@ code {
     width: 360px;
     height: 50vh;
   }
-  .product-price, .product-tax {
+  .product-price,
+  .product-tax {
     text-align: center;
   }
   .btn-product-detail {
@@ -140,20 +148,24 @@ code {
   }
 }
 
-@media screen and (max-width: 490px){
+@media screen and (max-width: 490px) {
   .cardWrapper {
     width: 300px;
   }
-  
+
   .product-img {
     width: 260px;
   }
 
-  .product-title, .product-descript, .product-farm, .product-stock {
+  .product-title,
+  .product-descript,
+  .product-farm,
+  .product-stock {
     text-align: center;
   }
 
-  .product-price, .product-tax {
+  .product-price,
+  .product-tax {
     text-align: center;
   }
 
@@ -162,7 +174,7 @@ code {
   }
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 390px) {
   .btn-product-detail {
     margin-left: 60px;
   }
