@@ -1,19 +1,20 @@
 import React from 'react';
 import {
     Container,
-    Row,
-    Col,
-    Form,
-    Card
 } from 'react-bootstrap'
-import Product from '../List/products'
 
 
 function OrderSumary(props) {
+
+    console.log(props.history.location.state);
+
     return (
         <Container className="border mt-5 col-md-6">
             <h1>Order Sumary</h1>
             <p> Price can change depending on shipping method and taxes of your </p>
+            <div>
+
+            </div>
             {/*
                 <div className="cardWrapper mt-5">
                     {

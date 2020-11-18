@@ -1,13 +1,15 @@
 import { Container } from 'react-bootstrap'
+import { useHistory } from 'react-router-dom'
 import './style.css'
 
 function ProductDetail(props) {
 
-  console.log(props)
-
+    const history = useHistory();
     const product = props.history.location.state;
 
-    console.log(product)
+    function checkoutHandler(e, product){
+      history.push("/checkout", product)
+    }
 
     return (
       <>
@@ -59,7 +61,9 @@ function ProductDetail(props) {
                   <span className="price">${product.price_per_pack}</span> 
                   <div className="purchase-form">
                     <input className="product-detail-quantity" type="number" defaultValue="0" name="stock"/>
-                    <button className="btn-purchase">Comprar</button> 
+                    <button className="btn-purchase" onClick={(e)=>{
+                      checkoutHandler(e, product)
+                    }} >Comprar</button> 
                   </div>
                 </div>
             </div>
