@@ -1,0 +1,257 @@
+/*    Fonts    */
+@font-face {
+  src: url("./NEOU.ttf");
+  font-family: "Neou";
+}
+/*    Overlay Page    */
+.overlay-page {
+  width: 100%;
+  height: 100vh;
+  margin-top: 64px;
+  background-color: #fff;
+  z-index: 1000;
+  position: absolute;
+  overflow: hidden;
+}
+
+/*    Home    */
+.home {
+  margin-top: -64px;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.video-container {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  margin-top: 64px;
+}
+.video {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+
+  object-fit: cover;
+}
+.bg-overlay {
+  position: absolute;
+  margin-top: 64px;
+  width: 100%;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.11808473389355745) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  overflow: hidden;
+  margin: 0;
+  height: auto;
+  justify-content: center;
+  margin-top: 100px;
+}
+.logo {
+  overflow: hidden;
+}
+.logo img {
+  width: 55%;
+}
+.title-info {
+  overflow: hidden;
+  font-family: Neou;
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+/*    Information    */
+.information {
+  width: 100%;
+  height: 100vh;
+  padding: 10% 20%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.information h1 {
+  font-family: Neou;
+  text-transform: uppercase;
+  color: rgb(59, 59, 59);
+  margin: 0;
+  font-weight: bold;
+}
+.information p {
+  font-family: Neou;
+  margin: 0;
+  color: #585858;
+}
+
+/*    Map    */
+.farmer {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto!important
+}
+.farmer img {
+  width: 70%;
+  margin: 0 !important;
+}
+.overlay-farmer {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.farmer-text {
+  font-family: Neou;
+  width: 60%;
+  margin: 20px auto;
+}
+
+/*    Qualities    */
+#qualities{
+  width: 100%;
+}
+.qualities {
+  padding: 9% 10%;
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+  width: 100%;
+}
+.box-3 {
+  overflow: hidden;
+  position: relative;
+  padding: 0px !important;
+  width: 250px !important;
+  text-align: center;
+}
+.box-3 img {
+  width: 250px;
+}
+.overlay-box-3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+}
+.worker {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.worker h1 {
+  transform: rotate(90deg);
+  text-align: center;
+  font-family: Bebas Neue;
+  font-size: 130px;
+  color: #dbdbdb;
+}
+.qualities-text {
+  padding: 5% !important;
+}
+.qualities-title {
+  font-family: Neou;
+  text-transform: uppercase;
+  color: rgb(59, 59, 59);
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 0 !important;
+}
+.qualities-info {
+  margin-bottom: 20px !important;
+  line-height: 30px;
+  font-family: Neou;
+  color: #585858;
+}
+
+/*    Footer    */
+.footer {
+  background-color: black;
+  margin: 0 !important;
+  position: relative;
+  overflow: hidden;
+
+}
+.footer-info {
+  padding: 20px 0;
+  color: white;
+  font-family: Neou;
+  font-size: 10px;
+  margin: 0 !important;
+  width: 100%;
+  text-align: center!important;
+  
+}
+.footer p {
+  margin: 0;
+}
+.overlay-footer {
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/*    Media Queries    */
+
+@media screen and (max-width: 1207px) {
+  .logo {
+    font-size: calc(5vw + 10px);
+  }
+  .title-info {
+    font-size: calc(0.5vw + 7px);
+  }
+}
+@media screen and (max-width: 990px) {
+  .box-3 img {
+    width: 100%;
+    height: auto !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .qualities-text {
+    text-align: center;
+    padding-bottom: 5% !important;
+  }
+  .worker {
+    display: none;
+  }
+  .qualities {
+    flex-direction: column;
+    height: auto;
+  }
+  .box-3 {
+    width: 40% !important;
+    margin: 0 !important;
+  }
+  .qualities-text {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bg-overlay {
+    height: 100vh;
+  }
+  .information {
+    padding: 20% 10%;
+  }
+}

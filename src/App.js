@@ -2,6 +2,7 @@ import CheckOut from './Checkout'
 import Products from './List'
 import ProductDetail from './ProductDetail'
 import OrderSumary from './Order';
+import LandingP from './Home/LandingP'
 
 import { Navbar, Nav } from 'react-bootstrap'
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom'
@@ -9,11 +10,11 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
 
 function App () {
+
   return (
     <div className='app'>
       <Router>
-        <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="#home" className="ml-5">React-Bootstrap</Navbar.Brand>
+        <Navbar bg="light" expand="lg" fixed="top">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
@@ -27,6 +28,7 @@ function App () {
           <Route path="/checkout" component={CheckOut}></Route>
           <Route path="/productDetail" component={ProductDetail}></Route>
           <Route path="/OrderSumary" component={OrderSumary}></Route>
+          <Route path="/" component={LandingP}></Route>
         </Switch>
       </Router>
     </div>
