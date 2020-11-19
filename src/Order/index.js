@@ -17,7 +17,7 @@ function OrderSumary(props) {
     return (
         <Container>
             <div className="summary-header">
-                <h1 id="orderTxt">Order Sumary</h1>
+                <h1 id="orderTxt">Order Summary</h1>
                 <p id="orderSubTxt"> Price can change depending on shipping method and taxes of your </p>
             </div>
             <div className="cardWrapper mt-4">
